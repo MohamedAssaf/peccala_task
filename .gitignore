@@ -1,0 +1,4 @@
+node_modules/
+peccala.csv
+yarn.lock
+.env

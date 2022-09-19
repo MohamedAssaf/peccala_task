@@ -1,0 +1,27 @@
+{
+  "name": "peccala_task",
+  "version": "1.0.0",
+  "description": "Task for job application at Peccala",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MohamedAssaf/peccala_task.git"
+  },
+  "author": "Mohamed Assem Assaf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MohamedAssaf/peccala_task/issues"
+  },
+  "homepage": "https://github.com/MohamedAssaf/peccala_task#readme",
+  "dependencies": {
+    "csv-writer": "^1.6.0",
+    "dotenv": "^16.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
