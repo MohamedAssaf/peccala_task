@@ -1,4 +1,4 @@
-class BigDecimal {
+ class BigDecimal {
     // Configuration: constants
     static DECIMALS = 18; // number of decimals on all instances
     static ROUNDED = false; // numbers are truncated (false) or rounded (true)
@@ -35,3 +35,5 @@ class BigDecimal {
                 .replace(/\.?0+$/, "");
     }
 }
+
+module.exports= BigDecimal;

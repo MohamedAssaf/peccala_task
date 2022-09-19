@@ -1,5 +1,6 @@
 const fs = require("fs");
 const os = require("os");
+const BigDecimal = require('./BigDecimal');
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 const csvWriter = createCsvWriter({
     path: 'peccala.csv',
