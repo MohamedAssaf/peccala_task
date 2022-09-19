@@ -1,6 +1,6 @@
 const fs = require("fs");
 const os = require("os");
-const BigDecimal = require('./BigDecimal');
+const bd = require('./BigDecimal');
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 const csvWriter = createCsvWriter({
     path: 'peccala.csv',
@@ -12,7 +12,7 @@ const csvWriter = createCsvWriter({
 
 require('dotenv').config();
 
-const twoMinutesMilliSeconds = 2 * 60 * 1000;
+const twoMinutesMilliSeconds = 2 * 2 * 1000;
 
 function setEnvValue(key, value) {
 
@@ -45,7 +45,7 @@ function dataToAddTOCSV(value, dateTime){
 let peccalaValue = process.env.peccalaValue;
 
 const peccalaTask = async function () {
-    peccalaValue = new BigDecimal(peccalaValue);
+    peccalaValue = new bd(peccalaValue);
     peccalaValue = peccalaValue.multiply(2).add(1.5).divide(7.5);
     let peccalaValueString = peccalaValue.toString();
     setEnvValue("peccalaValue", peccalaValueString);
